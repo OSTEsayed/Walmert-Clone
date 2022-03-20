@@ -47,22 +47,69 @@ nav{
     border: none;
 }
 .list{
+    display: none;
     margin: 0;
     position: fixed;
     z-index: 5;
     top: 90px;
     left: 200px;
-    width: 20%;
+    height: 340px;
+    width: 270px;
     overflow: auto;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow:auto;
 }
-.i{
-   border-bottom: 1px solid black; 
+.i{ 
+    
+    margin: auto;
+    padding: 10px 40px ;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.1em;
+    background-color:aliceblue;
+    height: 20px;
+    
+}
+.i:hover {
+    background-color: rgba(3, 161, 253,0.19);
+    border-left: 2px solid blue;
 }
 .it:hover{
     background-color: rgb(36, 3, 112);
-
+    
 }
 
+.list2{
+    display: none;
+    margin: 0;
+    position: fixed;
+    z-index: 5;
+    top: 90px;
+    left: 470px;
+    height: 340px;
+    width: 450px;
+    overflow: auto;
+    background-color: rgba(3, 161, 253,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    overflow:hidden auto;    
+grid-template-columns:repeat(3,150px); 
+}
 
+.a{
+    display: none;
+}
+.b{
+    display: none;
+}
+.c{
+    display: none;
+}
+.d{
+    display: none;
+}
+.e{
+    display: none;
+}
+.f{
+    display: none;
+}
