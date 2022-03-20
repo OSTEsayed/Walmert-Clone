@@ -1,13 +1,19 @@
 let list2 = document.getElementsByClassName("list2")[0];
 let list = document.getElementsByClassName("list")[0];
 let a1 = document.getElementsByClassName("a1")[0];
+let as = document.getElementsByClassName("as")[0];
 let a2 = document.getElementsByClassName("a2")[0];
+let a3 = document.getElementsByClassName("a3")[0];
+let a4 = document.getElementsByClassName("a4")[0];
+let a5 = document.getElementsByClassName("a5")[0];
+let a6 = document.getElementsByClassName("a6")[0];
 let a = document.getElementsByClassName("a")[0];
 let b = document.getElementsByClassName("b")[0];
 let c = document.getElementsByClassName("c")[0];
 let d = document.getElementsByClassName("d")[0];
 let e = document.getElementsByClassName("e")[0];
 let f = document.getElementsByClassName("f")[0];
+let bodt= document.getElementsByTagName("body")[0];
 let cat = document.getElementsByClassName("categorie")[0];
 
 function mega(a,b,c,d,e,f){
@@ -20,17 +26,31 @@ function mega(a,b,c,d,e,f){
 }
 function megaout(a){
     a.style.display="none";
+    test(a,b,c,d,e,f);
+};
+function des(){
+    a.style.display="none";
+    b.style.display="none";
+    d.style.display="none";
+    c.style.display="none";
+    e.style.display="none";
+    f.style.display="none";
 };
 function test(a,b,c,d,e,f){
     if(a.style.display=="none" && b.style.display=="none" && c.style.display=="none" && d.style.display=="none" && f.style.display=="none" && e.style.display=="none")
-{ return true;}
-return false;
+{ list.style.display="none";
+bodt.style.backgroundColor= "aliceblue";}
 }
-cat.onmouseover = function(){list.style.display="block";};
-list.onmouseleave = function(){
-    if (test(a,b,c,d,e,f)==true){list.style.display="none";}
+
+cat.onmouseover = function(){list.style.display="block";
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
+
 };
-    
+list.onmouseleave = function(){test(a,b,c,d,e,f);};
+list.onmouseover=function(){list.style.display="block"
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}    
+as.onmouseover = function(){des()};
+
 a1.onmouseover = function(){mega(a,b,c,d,e,f);};
 a.onmouseleave =function(){ megaout(a)};
 

@@ -10,6 +10,11 @@ html{
     scroll-behavior: smooth;
     background-color: gainsboro;
 }
+body{
+    margin: 0;
+    padding: 50;
+    background-color: aliceblue;
+}
 nav{
     color:aliceblue;
     z-index: 5;
@@ -22,6 +27,25 @@ nav{
     height: 90px;
     display: flex;
     gap: 10px;
+}
+.placment{
+    padding: 15 0 0 30px;
+    display: flex;
+    position: fixed;
+    float: left;
+    z-index: 5;
+    gap: 10px;
+    top: 90px;
+    left: 0;
+    width: 100vw;
+    height: 30px;
+    max-height: 30px;
+    color:aliceblue;
+    background-color: rgb(28, 51, 151);
+}
+
+.placment a{
+    color: aliceblue;
 }
 .logo{
     color:aliceblue;
@@ -89,7 +113,7 @@ nav{
     height: 340px;
     width: 450px;
     overflow: auto;
-    background-color: rgba(3, 161, 253,0.19);
+    background-color:rgb(177, 217, 250);;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     overflow:hidden auto;    
 grid-template-columns:repeat(3,150px); 
