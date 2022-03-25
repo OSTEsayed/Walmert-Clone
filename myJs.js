@@ -15,6 +15,11 @@ let e = document.getElementsByClassName("e")[0];
 let f = document.getElementsByClassName("f")[0];
 let bodt= document.getElementsByTagName("body")[0];
 let cat = document.getElementsByClassName("categorie")[0];
+let mainS = document.getElementsByClassName("mainS")[0];
+let panel = document.getElementsByClassName("panel")[0];
+let mainS = document.getElementsByClassName("item")[0];
+let panel = document.getElementsByClassName("order")[0];
+
 
 function mega(a,b,c,d,e,f){
     a.style.display="grid";
@@ -46,6 +51,7 @@ cat.onmouseover = function(){list.style.display="block";
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 
 };
+
 list.onmouseleave = function(){test(a,b,c,d,e,f);};
 list.onmouseover=function(){list.style.display="block"
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}    
@@ -73,4 +79,28 @@ e.onmouseleave = function(){ megaout(e)};
 
 
 
+panel.onmouseover = function(){mainS.style.display="grid";
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
+};
+mainS.onmouseleave = function(){mainS.style.display="none"
+bodt.style.backgroundColor= "aliceblue";};
+mainS.onmouseover=function(){mainS.style.display="grid"
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
 
+
+mainS.onmouseout = function(){mainS.style.display="none"
+bodt.style.backgroundColor= "aliceblue";};
+
+
+
+panel.onmouseover = function(){mainS.style.display="grid";
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
+};
+mainS.onmouseleave = function(){mainS.style.display="none"
+bodt.style.backgroundColor= "aliceblue";};
+mainS.onmouseover=function(){mainS.style.display="grid"
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
+
+
+mainS.onmouseout = function(){mainS.style.display="none"
+bodt.style.backgroundColor= "aliceblue";};
