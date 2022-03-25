@@ -4,9 +4,7 @@
     color:rgb(0, 0, 80);
     list-style: none;
 }
-a{
-    color: aliceblue;
-}
+
 html{
     margin: 0;
     scroll-behavior: smooth;
