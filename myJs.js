@@ -119,9 +119,10 @@ function clickk() {
     mod.style.display="grid";
     list.style.display="none";
     list2.style.display="none";
-    panel.style.display="none";
+    mainS.style.display="none";
     order.style.display="none";
 }
 function clicke() {
     mod.style.display="none";
+    bodt.style.backgroundColor= "aliceblue";
 }
