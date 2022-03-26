@@ -22,6 +22,10 @@ let item = document.getElementsByClassName("item")[0];
 let order = document.getElementsByClassName("order")[0];
 let sold = document.getElementsByClassName("sold")[0];
 let mod = document.getElementsByClassName("mod")[0];
+let demi= document.getElementById("demi");
+let ok= document.getElementsByClassName("oek")[0];
+let logo= document.getElementsByClassName("Logo")[0];
+
 
 
 function mega(a,b,c,d,e,f){
@@ -127,4 +131,44 @@ function clickk() {
 function clicke() {
     mod.style.display="none";
     bodt.style.backgroundColor= "aliceblue";
+}
+
+
+if (screen.width <= 800){
+
+    
+    function demi_resp(){
+    list.style.display="none";
+    list2.style.display="none";
+    mainS.style.display="none";
+    order.style.display="none";
+    mod.style.display="none";
+    if (demi.className=="demi fa-solid fa-bars"){
+            ok.style.display="none";
+            sold.style.display="none"; 
+            logo.style.display="none"; 
+            cat.style.display="block"; 
+            panel.style.display="block"; 
+            item.style.display="block"; 
+            demi.className="demi fa-solid fa-xmark";
+        }
+        else {
+            demi.className="demi fa-solid fa-xmark";
+            
+            cat.style.display="none"; 
+            panel.style.display="none"; 
+            item.style.display="none"; 
+            
+            ok.style.display="flex";
+            sold.style.display="block"; 
+            logo.style.display="block"; 
+            demi.className="demi fa-solid fa-bars";
+
+    }
+
+}
+
+
+
+
 }

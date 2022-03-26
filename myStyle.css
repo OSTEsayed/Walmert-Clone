@@ -304,5 +304,55 @@ grid-template-columns:repeat(2,40%); }
 
     border: 3px solid black;
 }
+nav .demi{
+    display: none;
+}
+
+
+@media (max-width: 800px){
+   
+    .Categorie , .panel ,.item{
+        display: none;
+    }
+    nav {
+        gap:20px;
+    }
+    nav .demi{
+        display: block;
+        color: aliceblue;
+        position:fixed;
+        padding:30px 0; 
+        right: 20px;
+        font-size: 2em;
+    }
+    .list{
+        left: 0;
+        width: 35%;    
+    }
+    
+.list2{
+    left: 35%;
+    width: 50%;
+    grid-template-columns:repeat(2,50%); 
+
+}
+
+.mainS{
+    left:40%;
+    width: 160px;
+}
+
+.order{
+    left:25%;
+    width: 120px;
+}
+
+
+}
+
+
+
+
+
 
 
