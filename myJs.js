@@ -89,6 +89,7 @@ e.onmouseleave = function(){ megaout(e)};
 panel.onmouseover = function(){mainS.style.display="grid";
 order.style.display="none";
 list.style.display="none";
+list2.style.display="none";
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 };
 mainS.onmouseleave = function(){mainS.style.display="none"
@@ -105,6 +106,7 @@ bodt.style.backgroundColor= "aliceblue";};
 item.onmouseover = function(){order.style.display="grid";
 mainS.style.display="none";
 list.style.display="none";
+list2.style.display="none";
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 };
 order.onmouseleave = function(){order.style.display="none";
