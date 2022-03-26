@@ -14,11 +14,14 @@ let d = document.getElementsByClassName("d")[0];
 let e = document.getElementsByClassName("e")[0];
 let f = document.getElementsByClassName("f")[0];
 let bodt= document.getElementsByTagName("body")[0];
+let main= document.getElementsByTagName("main")[0];
 let cat = document.getElementsByClassName("categorie")[0];
 let mainS = document.getElementsByClassName("mainS")[0];
 let panel = document.getElementsByClassName("panel")[0];
-let mainS = document.getElementsByClassName("item")[0];
-let panel = document.getElementsByClassName("order")[0];
+let item = document.getElementsByClassName("item")[0];
+let order = document.getElementsByClassName("order")[0];
+let sold = document.getElementsByClassName("sold")[0];
+let mod = document.getElementsByClassName("mod")[0];
 
 
 function mega(a,b,c,d,e,f){
@@ -44,10 +47,14 @@ function des(){
 function test(a,b,c,d,e,f){
     if(a.style.display=="none" && b.style.display=="none" && c.style.display=="none" && d.style.display=="none" && f.style.display=="none" && e.style.display=="none")
 { list.style.display="none";
+
 bodt.style.backgroundColor= "aliceblue";}
 }
 
 cat.onmouseover = function(){list.style.display="block";
+mainS.style.display="none"
+order.style.display="none"
+
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 
 };
@@ -80,6 +87,8 @@ e.onmouseleave = function(){ megaout(e)};
 
 
 panel.onmouseover = function(){mainS.style.display="grid";
+order.style.display="none";
+list.style.display="none";
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 };
 mainS.onmouseleave = function(){mainS.style.display="none"
@@ -93,14 +102,26 @@ bodt.style.backgroundColor= "aliceblue";};
 
 
 
-panel.onmouseover = function(){mainS.style.display="grid";
+item.onmouseover = function(){order.style.display="grid";
+mainS.style.display="none";
+list.style.display="none";
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 };
-mainS.onmouseleave = function(){mainS.style.display="none"
+order.onmouseleave = function(){order.style.display="none";
 bodt.style.backgroundColor= "aliceblue";};
-mainS.onmouseover=function(){mainS.style.display="grid"
+order.onmouseover=function(){order.style.display="grid"
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
 
 
-mainS.onmouseout = function(){mainS.style.display="none"
+order.onmouseout = function(){order.style.display="none"
 bodt.style.backgroundColor= "aliceblue";};
+function clickk() {
+    mod.style.display="grid";
+    list.style.display="none";
+    list2.style.display="none";
+    panel.style.display="none";
+    order.style.display="none";
+}
+function clicke() {
+    mod.style.display="none";
+}
