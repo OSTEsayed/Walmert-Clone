@@ -28,6 +28,17 @@ let logo= document.getElementsByClassName("Logo")[0];
 let nav= document.getElementsByTagName("nav")[0];
 
 
+function clickk() {
+    mod.style.display="grid";
+    list.style.display="none";
+    list2.style.display="none";
+    mainS.style.display="none";
+    order.style.display="none";
+}
+function clicke() {
+    mod.style.display="none";
+    bodt.style.backgroundColor= "aliceblue";
+}
 
 function mega(a,b,c,d,e,f){
     list2.style.display="block";
@@ -56,6 +67,39 @@ function test(a,b,c,d,e,f){
 
 bodt.style.backgroundColor= "aliceblue";}
 }
+
+panel.onmouseover = function(){mainS.style.display="grid";
+order.style.display="none";
+list.style.display="none";
+list2.style.display="none";
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
+};
+mainS.onmouseleave = function(){mainS.style.display="none"
+bodt.style.backgroundColor= "aliceblue";};
+mainS.onmouseover=function(){mainS.style.display="grid"
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
+
+
+mainS.onmouseout = function(){mainS.style.display="none"
+bodt.style.backgroundColor= "aliceblue";};
+
+
+
+
+item.onmouseover = function(){order.style.display="grid";
+mainS.style.display="none";
+list.style.display="none";
+list2.style.display="none";
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
+};
+order.onmouseleave = function(){order.style.display="none";
+bodt.style.backgroundColor= "aliceblue";};
+order.onmouseover=function(){order.style.display="grid"
+bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
+
+
+order.onmouseout = function(){order.style.display="none"
+bodt.style.backgroundColor= "aliceblue";};
 
 
 if (screen.width>500){
@@ -95,48 +139,8 @@ e.onmouseleave = function(){ megaout(e)};
 
 
 
-panel.onmouseover = function(){mainS.style.display="grid";
-order.style.display="none";
-list.style.display="none";
-list2.style.display="none";
-bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
-};
-mainS.onmouseleave = function(){mainS.style.display="none"
-bodt.style.backgroundColor= "aliceblue";};
-mainS.onmouseover=function(){mainS.style.display="grid"
-bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
 
 
-mainS.onmouseout = function(){mainS.style.display="none"
-bodt.style.backgroundColor= "aliceblue";};
-
-
-
-item.onmouseover = function(){order.style.display="grid";
-mainS.style.display="none";
-list.style.display="none";
-list2.style.display="none";
-bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
-};
-order.onmouseleave = function(){order.style.display="none";
-bodt.style.backgroundColor= "aliceblue";};
-order.onmouseover=function(){order.style.display="grid"
-bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
-
-
-order.onmouseout = function(){order.style.display="none"
-bodt.style.backgroundColor= "aliceblue";};
-function clickk() {
-    mod.style.display="grid";
-    list.style.display="none";
-    list2.style.display="none";
-    mainS.style.display="none";
-    order.style.display="none";
-}
-function clicke() {
-    mod.style.display="none";
-    bodt.style.backgroundColor= "aliceblue";
-}
 
 }
 if (screen.width>500 && screen.width <= 800){
@@ -171,7 +175,15 @@ if (screen.width>500 && screen.width <= 800){
     }
     }
 }
+
 if (screen.width <500){
+
+let close=document.getElementById("close");
+let ie=document.getElementsByClassName("ie")[0];
+close.onclick= function(){
+    des();
+    list.style.display="none";
+};   
 
 function demi_resp(){
     if (demi.className=="demi fa-solid fa-bars"){
@@ -184,16 +196,22 @@ function demi_resp(){
         cat.style.display="block"; 
         panel.style.display="block"; 
         item.style.display="block"; 
+        ie.style.display="block";
     }
     else {
         demi.className="demi fa-solid fa-bars";
         
+        ie.style.display="none";
         nav.style.display="flex";
         nav.style.height="90px";
         cat.style.display="none"; 
         panel.style.display="none"; 
         item.style.display="none"; 
-        
+        list.style.display="none"; 
+        list2.style.display="none"; 
+        mainS.style.display="none"
+        order.style.display="none"
+
         ok.style.display="flex";
         sold.style.display="none"; 
         
@@ -202,7 +220,7 @@ function demi_resp(){
 }
 
 
-cat.onclick = function(){list.style.display="block";
+cat.onclick = function(){list.style.display="block";list.style.left="0";
 mainS.style.display="none"
 order.style.display="none"
 
@@ -210,42 +228,41 @@ bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 
 };
 
-list.onmouseout = function(){test(a,b,c,d,e,f);};
-list.onclick=function(){list.style.display="block"
-bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}    
+//list.onclick=function(){list.style.display="block"bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}    
 as.onclick = function(){des()
-    list.style.left="0";};
+list.style.left="0";
+};
 
 a1.onclick = function(){mega(a,b,c,d,e,f);
-    list.style.left="-60%";};
+    list.style.left="-80%";};
 a.onmouseout =function(){ megaout(a)
     list.style.left="0";};
 
 a2.onclick = function(){mega(b,a,c,d,e,f);
-    list.style.left="-60%";};
+    list.style.left="-80%";};
 b.onmouseout = function(){ megaout(b)
     list.style.left="0";};
 
 a3.onclick = function(){mega(c,b,a,d,e,f);
-    list.style.left="-60%";};
+    list.style.left="-80%";};
 c.onmouseout = function(){
     list.style.left="0";
     megaout(c)};
 
 a4.onclick = function(){mega(d,b,c,a,e,f);
-    list.style.left="-60%";};
+    list.style.left="-80%";};
 d.onmouseout = function(){
     list.style.left="0";
     megaout(d)};
 
 a5.onclick = function(){mega(f,b,c,d,e,a);
-list.style.left="-60%";};
+list.style.left="-80%";};
 f.onmouseout = function(){
     list.style.left="0";
     megaout(f)};
 
 a6.onclick = function(){mega(e,b,c,d,a,f);
-list.style.left="-60%";};
+list.style.left="-80%";};
 e.onmouseout = function(){ megaout(e)};
 
 
