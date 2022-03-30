@@ -31,7 +31,7 @@ nav{
 nav a{
     text-decoration: none;
 }
-.placment{
+ .placment{
     display: flex;
     position: absolute;
     float: left;
@@ -54,12 +54,17 @@ hr{
     color: aliceblue;
 }
 .logo{
-    color:aliceblue;
+    display: flex;
+
     font-size: 1.5em;
     margin: 0;
     padding: 25px 30px;
+    gap:10px;
+        width: 15%;
+}
+.logo .ie{
+    color: rgb(229, 239, 248);
     font-family:lobster,Georgia, 'Times New Roman', Times, serif;
-    width: 15%;
 }
 .it {
     display: grid;
@@ -80,6 +85,9 @@ hr{
 .oek{
     width: 40%;
     display: flex;
+}
+.fa-digital-ocean{
+    color: rgb(255, 255, 75);
 }
 .fofo{
     position:relative;
@@ -128,7 +136,15 @@ hr{
 }
 
 .list2{
+    display: none;   
+}
+.arr{
     display: none;
+    position: absolute;
+    right:10px;
+}
+.a ,.b ,.c,.d,.e,.f{
+    display:none;
     margin: 0;
     position: fixed;
     z-index: 5;
@@ -139,28 +155,8 @@ hr{
     overflow: auto;
     background-color:rgb(177, 217, 250);;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-    overflow:hidden auto;    
+    overflow:hidden auto; 
     grid-template-columns:repeat(3,33%); 
-
-}
-
-.a{
-    display: none;
-}
-.b{
-    display: none;
-}
-.c{
-    display: none;
-}
-.d{
-    display: none;
-}
-.e{
-    display: none;
-}
-.f{
-    display: none;
 }
 .sign{
     color:aliceblue;
@@ -308,6 +304,10 @@ nav .demi{
     display: none;
 }
 
+.list .arr{
+    display: none;
+}
+
 
 @media (max-width: 800px){
    
@@ -330,7 +330,7 @@ nav .demi{
         width: 35%;    
     }
     
-.list2{
+.a ,.b ,.c,.d,.e,.f{
     left: 35%;
     width: 50%;
     grid-template-columns:repeat(2,50%); 
@@ -346,7 +346,33 @@ nav .demi{
     left:25%;
     width: 120px;
 }
+.list .arr{
+    display: none;
+}
 
+}
+
+
+@media (max-width: 500px){
+    
+.sold,.Logo .ie{
+    display: none;
+}
+.fa-digital-ocean{
+    height: 50px;
+    width: 50px;
+    
+}
+
+nav .oek{  
+    position: relative; 
+    left:-50px;
+    width: 70%;
+    
+}
+.list .arr{
+    display: block;
+}
 
 }
 
