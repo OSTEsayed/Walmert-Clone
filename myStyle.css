@@ -92,7 +92,7 @@ hr{
 .fofo{
     position:relative;
     top:31px;
-    right: 50px;
+    right: 40px;
     border-radius: 50%;
     border:none;
     background-color: yellow;
@@ -301,7 +301,7 @@ grid-template-columns:repeat(2,40%); }
 
     border: 3px solid black;
 }
-nav .demi{
+nav .demi,.all{
     display: none;
 }
 
@@ -356,62 +356,125 @@ nav .demi{
 
 @media (max-width: 500px){
     
-.sold,.Logo .ie{
+.Logo .ie,nav .demi{
     display: none;
 }
 .fa-digital-ocean{
     height: 50px;
     width: 50px;
-    
+    padding: 30px 20px;
 }
-
-nav .oek{  
-    position: relative; 
-    left:-50px;
-    width: 70%;
-    
-}
-.list .arr{
+nav .all{
     display: block;
+    color: aliceblue;
+    padding:30px 0 0 30; 
+    font-size: 2em;
 }
-.list{
-    left: 0px;
-    height: 70%;
-    width: 100%;
-    
-    text-align: center;
-    
+nav{
+    gap: 0;
 }
-.i{ 
-    border-bottom: 1px dashed black;
+nav .Logo{   padding:0;
 }
+nav .oek{
+    min-width:50%;
+}
+nav .ok{
+    padding: 5px ;
+    margin:25px 0 25px 0;
+  
+}
+.side{
+    display: none;
+    position: fixed;
+    z-index: 5;    
+    background-color: aliceblue;
+    left: 0;
 
-.a ,.b ,.c,.d,.e,.f{
-    text-align: center;
-    left: 20%;
-    height: 70%;
-    width: 80%;
-    grid-template-columns:repeat(2,45%); 
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 85%;
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4),0 10px 25px 0 rgba(0,0,0,0.4);
+    overflow:scroll;
 }
-
 .mainS{
-    left:30%;
-    height: 50%;
-    width: 50%;
-    border-radius: 10px ;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    width: 80%;
+    height: 25%;
+    left: 10px;
+    top: 10px;
+    border-radius: 0;
+    border-bottom: 1px solid ;
+    box-shadow:0 0 0 0;
 }
 
 .order{
-    
-    left:30%;
-    height: 50%;
-    width: 50%;
-    border-radius: 10px ;
-    align-items: center;
-    border-radius:10px;
+    position: absolute;
+    display: grid;
+    width: 80%;
+    height: 25%;
+    left: 10px;
+    top: 35%;
+    border-radius: 0;
+    border-bottom: 1px solid ;
+    box-shadow:0 0 0 0;
+}
+
+.Catee{
+
+    position: absolute;
+    display: grid;
+    width: 90%;
+    height: fit-content;
+    left: 10px;
+    top: 70%;
+    border-radius: 0;
+    border-bottom: 1px solid ;
+    box-shadow:0 0 0 0;
+}
+
+.list{
+    display: grid;
+    margin: 0;
+    position: relative;
+    z-index: 5;
+    margin: 0;
+    top: 0;
+    left: 0;
+    height: fit-content;
+    width: 100%;
+    background-color: aliceblue;
+    box-shadow:0 0 0 0;
+}
+.Catee .list .i {
+    width: 74%;
+    text-align: left;
+    border-bottom: none;
+}
+.list .arr{
+    display: block
 }
 
 
+
+
+.list2{
+    display: block;   
+}
+.a ,.b ,.c,.d,.e,.f{
+    display:none;
+    position: absolute; 
+    grid-template-columns:repeat(1,100%); 
+    overflow: auto;
+    text-align: center;
+    top: 0;
+    left: 20%;
+    height: 100%;
+    width: 80%;
+    box-shadow:0 6px 12px  black;
+}
 
 
 

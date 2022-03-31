@@ -12,6 +12,8 @@
     
 <header>
 <Nav>
+<i onclick="demi_resp()"class="all fa-solid fa-bars" id="all"></i>
+
 <div class="Logo"> 
        <i class="ie">Company</i>
        <i class="fa-brands fa-digital-ocean"></i>
@@ -42,17 +44,36 @@
     <i class="fa-solid fa-location-dot"style="color: aliceblue;"></i>
     fame </div> 
 </div>
+<section class="side">
+
+    
+<section class="Acount">
+    <div class="mainS">
+        <button type="submit" onsubmit=""> sign in</button>
+        <button type="submit" onsubmit=""> Creat Acount</button>
+        <a href=""><i class="fa-solid fa-clock-rotate-left"></i> Purchase History</a>
+        
+</div>
+</section>
+
+<section class="order">
+    <a href=""> <i class="fa-solid fa-clipboard-list"></i>   Reorder</a>
+    <a href="">  <i class="fa-solid fa-heart"></i>  List</a>
+    <a href="">  <i class="fa-solid fa-gift"></i>  Register</a>
+
+</section>
+
 
     <section class="Catee">
         <li class="list">
-            <ul class="i as">         <b>All Categorie</b>   </ul><i  class="arr demi fa-solid fa-xmark" id="close"></i>   
-            <ul class="i a1">            categorie1       <i class="fa-solid fa-angles-right arr">1</i></ul>
-            <ul class="i a2">            categorie2        <i class="arr fa-solid fa-angles-right">2</i></ul>
-            <ul class="i a3">            categorie3        <i class="arr fa-solid fa-angles-right">3</i></ul>
-            <ul class="i a4">            categorie4       <i class="arr fa-solid fa-angles-right">4</i> </ul>
-            <ul class="i a5">            categorie5       <i class="arr fa-solid fa-angles-right">5</i> </ul>
-            <ul class="i a6">            categorie6       <i class="arr fa-solid fa-angles-right">6</i> </ul>
-            <ul class="i a7">            categorie7       <i class="arr fa-solid fa-angles-right">7</i> </ul>
+            <ul class="i as">         <b>All Categorie</b>   <i class="fa-solid fa-xmark arr" id="close"></i></ul>   
+            <ul class="i a1">            categorie1       <i class="fa-solid fa-angles-right arr"></i></ul>
+            <ul class="i a2">            categorie2        <i class="arr fa-solid fa-angles-right"></i></ul>
+            <ul class="i a3">            categorie3        <i class="arr fa-solid fa-angles-right"></i></ul>
+            <ul class="i a4">            categorie4       <i class="arr fa-solid fa-angles-right"></i> </ul>
+            <ul class="i a5">            categorie5       <i class="arr fa-solid fa-angles-right"></i> </ul>
+            <ul class="i a6">            categorie6       <i class="arr fa-solid fa-angles-right"></i> </ul>
+            <ul class="i a7">            categorie7       <i class="arr fa-solid fa-angles-right"></i> </ul>
         </li>
 
         <div class="list2">
@@ -108,25 +129,13 @@
 </div>
 </section>
 
-<section class="Acount">
-    <div class="mainS">
-        <button type="submit" onsubmit=""> sign in</button>
-        <button type="submit" onsubmit=""> Creat Acount</button>
-    <a href=""><i class="fa-solid fa-clock-rotate-left"></i> Purchase History</a>
-
-</div>
-</section>
-<section class="order">
-    <a href=""> <i class="fa-solid fa-clipboard-list"></i>   Reorder</a>
-    <a href="">  <i class="fa-solid fa-heart"></i>  List</a>
-    <a href="">  <i class="fa-solid fa-gift"></i>  Register</a>
 
 </section>
 
 <div class="mod">
 
     <section  class="Carter">
-<header>
+        <header>
    <h3>
        My Cart
     </h3>
@@ -152,10 +161,87 @@
 </section>
 
 </div>
-
 </header>
 
+<main>
+    
 
+nav .oek{  
+    position: relative; 
+    left:-50px;
+    width: 70%;
+    
+}
+.list .arr{
+    display: block;
+}
+.list{
+    left: 0px;
+    height: 70%;
+    width: 100%;
+    
+    text-align: center;
+    
+}
+.i{ 
+    border-bottom: 1px dashed black;
+}
+
+.a ,.b ,.c,.d,.e,.f{
+    text-align: center;
+    left: 20%;
+    height: 70%;
+    width: 80%;
+    grid-template-columns:repeat(2,45%); 
+}
+
+.mainS{
+    left:30%;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px ;
+}
+
+.order{
+    
+    left:30%;
+    height: 50%;
+    width: 50%;
+    border-radius: 10px ;
+    align-items: center;
+    border-radius:10px;
+}
+
+
+
+
+ 
+ie.style.display="none";
+nav.style.display="flex";
+nav.style.height="90px";
+cat.style.display="none"; 
+panel.style.display="none"; 
+item.style.display="none"; 
+list.style.display="none"; 
+list2.style.display="none"; 
+mainS.style.display="none"
+order.style.display="none"
+
+ok.style.display="flex";
+sold.style.display="none"; 
+
+
+
+ok.style.display="none";
+        
+        nav.style.display="grid";
+        nav.style.height="max-content";
+        sold.style.display="block"; 
+        cat.style.display="block"; 
+        panel.style.display="block"; 
+        item.style.display="block"; 
+        ie.style.display="block";
+</main>
 
 </body>
 <script src="myJs.js"></script>
