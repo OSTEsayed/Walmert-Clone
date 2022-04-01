@@ -7,6 +7,7 @@ let a3 = document.getElementsByClassName("a3")[0];
 let a4 = document.getElementsByClassName("a4")[0];
 let a5 = document.getElementsByClassName("a5")[0];
 let a6 = document.getElementsByClassName("a6")[0];
+let a7 = document.getElementsByClassName("a7")[0];
 let a = document.getElementsByClassName("a")[0];
 let b = document.getElementsByClassName("b")[0];
 let c = document.getElementsByClassName("c")[0];
@@ -29,9 +30,12 @@ let logo= document.getElementsByClassName("Logo")[0];
 let nav= document.getElementsByTagName("nav")[0];
 let side= document.getElementsByClassName("side")[0];
 let placment= document.getElementsByClassName("placment")[0];
+var i= document.getElementsByClassName("i");
+var Carter= document.getElementsByClassName("Carter")[0];
 
 
 function clickk() {
+    Carter.style.backgroundColor="black";
     mod.style.display="grid";
     list.style.display="none";
     list2.style.display="none";
@@ -209,21 +213,28 @@ function demi_resp(){
     if (all.className=="all fa-solid fa-bars"){
         all.className="all fa-solid fa-xmark";
         nav.style.left="85%";
-        side.style.display="grid";
+        side.style.left="0";
+        bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
         
     }
     else {
         all.className="all fa-solid fa-bars";
         nav.style.left="0";
-        side.style.display="none";
+        side.style.left="-90%";
+        bodt.style.backgroundColor= "aliceblue";
         
     }
 
 }
-
-
 as.onclick = function(){des()
 list.style.left="0";
+a1.style.display="block";
+a2.style.display="block";
+a3.style.display="block";
+a4.style.display="block";
+a5.style.display="block";
+a6.style.display="block";
+a7.style.display="block";
 };
 
 a1.onclick = function(){mega(a,b,c,d,e,f);

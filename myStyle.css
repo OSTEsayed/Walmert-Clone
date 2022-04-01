@@ -8,12 +8,14 @@
 html{
     margin: 0;
     scroll-behavior: smooth;
-    background-color: gainsboro;
+    background-color: aliceblue;
 }
 body{
-    margin: 0;
-    padding: 50;
-    background-color: aliceblue;
+    gap:10px;
+    margin:0;
+    padding:40px  60px ;
+    background-color:aliceblue;
+    transition: 0.3s;
 }
 nav{
     color:aliceblue;
@@ -27,6 +29,7 @@ nav{
     height: 90px;
     display: flex;
     gap: 10px;
+    transition: 0.3s;
 }
 nav a{
     text-decoration: none;
@@ -251,8 +254,7 @@ hr{
         height: 100%; 
         overflow: auto; 
         background-color: rgba(0,0,0,0.4); 
-      
-}
+      }
 .Carter header{
     color:aliceblue;
     margin: 0;
@@ -301,7 +303,7 @@ grid-template-columns:repeat(2,40%); }
 
     border: 3px solid black;
 }
-nav .demi,.all{
+nav .demi,#all{
     display: none;
 }
 
@@ -364,7 +366,7 @@ nav .demi,.all{
     width: 50px;
     padding: 30px 20px;
 }
-nav .all{
+nav #all{
     display: block;
     color: aliceblue;
     padding:30px 0 0 30; 
@@ -384,11 +386,11 @@ nav .ok{
   
 }
 .side{
-    display: none;
+    display: grid;
     position: fixed;
     z-index: 5;    
     background-color: aliceblue;
-    left: 0;
+    left: -90%;
 
     top: 0;
     margin: 0;
@@ -396,7 +398,8 @@ nav .ok{
     width: 85%;
     box-shadow: 0 10px 15px 0 rgba(0,0,0,0.4),0 10px 25px 0 rgba(0,0,0,0.4);
     overflow:scroll;
-}
+    transition: 0.3s;}
+
 .mainS{
     position: absolute;
     display: grid;
@@ -431,7 +434,6 @@ nav .ok{
     left: 10px;
     top: 70%;
     border-radius: 0;
-    border-bottom: 1px solid ;
     box-shadow:0 0 0 0;
 }
 
@@ -476,8 +478,12 @@ nav .ok{
     box-shadow:0 6px 12px  black;
 }
 
-
-
+.i {
+    display: none;
+}
+.as{
+    display: block;
+}
 
 }
 

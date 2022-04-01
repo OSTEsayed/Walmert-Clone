@@ -1,0 +1,48 @@
+.first{
+    width:100%;
+    position: relative;
+    top: 120px;
+    height: 80%;
+    border-radius:15px;
+    background-image: url("image/stad.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: flex;
+}
+.first .picat{
+margin: 0;
+    width: 39.5%;
+    background-color: rgba(79, 151, 214, 0.8);
+    border-radius:15px 0 80% 15px;
+    padding: 20px 0 0 20px;
+    display: grid;
+}
+.picat h2{
+    color: aliceblue;
+    font-family:"Sofia",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.6em;
+}
+
+.picat button{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    width: 40%;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color:aliceblue;
+}
+.picat p{
+    
+}
+.picat button:hover{
+    color:aliceblue;
+    background-color: black;
+    border: 1px solid aliceblue;
+}
+
+
+
+
+
