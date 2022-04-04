@@ -255,7 +255,49 @@ list.style.left="-80%";};
 a6.onclick = function(){mega(e,b,c,d,a,f);
 list.style.left="-80%";};
 
-
-
-
 }
+
+// Nav bar Ended 
+// Slide images Start:
+
+
+let Index = 1;
+let first = document.getElementsByClassName("first");
+
+function goslide(n) {
+    Slide(Index += n);
+}
+function Slide(n) {
+  let i;
+  if (n > first.length) {Index = 1}    
+  if (n < 1) {Index = first.length}
+  for (i = 0; i < first.length; i++) {
+    first[i].style.display = "none";  
+  }
+  first[Index-1].style.display = "flex";
+}
+/*
+function AutoSlides() {
+    let i;
+    for (i = 0; i < first.length; i++) {
+      first[i].style.display = "none";
+    }
+    Index++;
+    if (Index > first.length) {Index = 1}
+    first[Index-1].style.display = "flex";
+    setTimeout(AutoSlides, 3500); 
+}
+AutoSlides();
+*/
+
+Slide(Index);
+
+
+
+
+
+
+
+
+
+

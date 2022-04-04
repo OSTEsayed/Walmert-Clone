@@ -1,16 +1,25 @@
-.first{
+.slide{
+    display: flex;
     width:100%;
     position: relative;
     top: 120px;
     height: 80%;
     border-radius:15px;
-    background-image: url("image/stad.jpg") ;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    display: flex;
+}
+.first{
+    display: none;
+    width:100%;
+    height: 100%;
+}
+.first img{
+    width: 100%; height: 100%;
+    border-radius:15px;
 }
 .first .picat{
-margin: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95%;
     width: 39.5%;
     background-color: rgba(79, 151, 214, 0.8);
     border-radius:15px 0 80% 15px;
@@ -28,13 +37,17 @@ margin: 0;
     font-family: 'Courier New', Courier, monospace;
     color: black;
     width: 40%;
+    min-width: 40%;
     height: 40px;
     border-radius: 30px;
     border: none;
     background-color:aliceblue;
 }
 .picat p{
-    
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.2em;
+    color: aliceblue;
+    padding: 0 50px 0 50px;
 }
 .picat button:hover{
     color:aliceblue;
@@ -43,6 +56,38 @@ margin: 0;
 }
 
 
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
 
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  .prev:hover, .next:hover {
+    background-color: #f1f1f1;
+    color: black;
+  }
 
-
+  @media (max-width: 500px){
+    .picat p{
+        padding:0;
+    }    
+    .first .picat{
+        height: 95%;
+        width: 60.5%;
+    }
+       
+  }
