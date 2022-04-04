@@ -358,7 +358,7 @@ nav .demi,#all{
 
 @media (max-width: 500px){
     body{
-        padding:0;
+        padding:40px  10px ;
     }
     
 .Logo .ie,nav .demi{
