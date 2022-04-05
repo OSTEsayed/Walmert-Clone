@@ -111,7 +111,6 @@ main{
     height: max-content;
     background-color: rgb(29, 101, 255);
     border-radius: 30px;
-    padding: 5px;
     box-shadow: inset 40px 0 10px 0 yellow;
 }
 .freeship p,.freeship a {
@@ -138,7 +137,7 @@ main{
     grid-area: selle1;
     display: flex;
     justify-content: space-between;
-    height: 20%;
+    height: 30%;
 }
 .sell1 button{
     margin-top: 15px;
@@ -155,7 +154,7 @@ main{
 }
 .sell2{
     grid-area: selle2;
-    height: 60%;
+    height: 70%;
     display: grid;
     grid-template-areas:
 "h2 a"
@@ -166,8 +165,7 @@ main{
    font-size: 1.3em;
 }
 .sell3,.sell4,.sell1,.sell2{
-   max-width: 70%;
-    margin: 20px;
+    margin: 15px;
     padding: 5 20px;
     box-shadow:2px 2px 10px  rgba(0, 0, 0, 0.349);
     border-radius: 10px;
@@ -184,9 +182,10 @@ main{
 text-align: end;
 }
 .sell2items{
+    margin-left: 10%;
     grid-area:item;
     gap:10px;
-
+    width:80%;
     display: flex;
     justify-content: space-between;
 }
@@ -207,10 +206,43 @@ text-decoration: none;
 font-family: Arial, Helvetica, sans-serif;
 }
 
+.sell4items{
+    display: grid;
+    grid-template-areas: "1 2"
+    "3 4";
+}
+.sell4items img{
+    background-color: rgb(198, 212, 255);
+    height: 100px;
+    width: auto;
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 500px){
     
 .sell{
-    
+    gap:30px;
     grid-template-areas:
     "selle1"
     "selle2"
@@ -218,6 +250,10 @@ font-family: Arial, Helvetica, sans-serif;
     "selle4";
 }
     
+.sell2items{
+    margin-left: 0;
+    max-width:80%;
+}
 }
 
 
