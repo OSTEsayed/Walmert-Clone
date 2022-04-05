@@ -8,17 +8,16 @@
 html{
     margin: 0;
     scroll-behavior: smooth;
-    background-color: aliceblue;
+    background-color: white;
 }
 body{
-    gap:10px;
     margin:0;
     padding:40px  60px ;
-    background-color:aliceblue;
+    background-color:white;
     transition: 0.3s;
 }
 nav{
-    color:aliceblue;
+    color:white;
     z-index: 5;
     position: fixed;
     margin: 0;
@@ -44,7 +43,7 @@ nav a{
     left: 0;
     width: 100vw;
     height: 40px;
-    color:aliceblue;
+    color:white;
     background-color: rgb(15, 44, 170);
 }
 hr{
@@ -54,7 +53,7 @@ hr{
     gap: 10px;
     display: flex;
     margin: 10 20;
-    color: aliceblue;
+    color: white;
 }
 .logo{
     display: flex;
@@ -71,7 +70,7 @@ hr{
 }
 .it {
     display: grid;
-    color:aliceblue;
+    color:white;
     margin: 25px 10px;
     padding: 5px  15px;
     border-radius: 30px;
@@ -125,7 +124,7 @@ hr{
     padding: 10px 40px ;
     font-family:'Times New Roman', Times, serif;
     font-size: 1.1em;
-    background-color:aliceblue;
+    background-color:white;
     height: 20px;
     
 }
@@ -163,7 +162,7 @@ hr{
     grid-template-columns:repeat(3,33%); 
 }
 .sign{
-    color:aliceblue;
+    color:white;
      text-align: center;
      font-size: 0.7em;
 }
@@ -185,14 +184,14 @@ hr{
     right:120;
     height: 180px;
     width: 160px;
-    background-color: aliceblue;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 0 0 10px 10px ;
 }
 .mainS button{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
-    color: aliceblue;
+    color: white;
     width: 90%;
     height: 40px;
     border-radius: 30px;
@@ -214,7 +213,7 @@ hr{
     right:240;
     height: 160px;
     width: 120px;
-    background-color: aliceblue;
+    background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
     border-radius: 0 0 10px 10px ;
 }
@@ -256,7 +255,7 @@ hr{
         background-color: rgba(0,0,0,0.4); 
       }
 .Carter header{
-    color:aliceblue;
+    color:white;
     margin: 0;
     top: 0;
     right: 0;
@@ -268,13 +267,13 @@ hr{
     gap: 10px;
 }
 .Carter header h3{
-    color: aliceblue;
+    color: white;
     padding: 10 30;
     
     font-size: 1.4em;
 }
 .Carter header .fof{
-    color: aliceblue;
+    color: white;
     text-decoration: none;
     position: fixed;
     padding: 35;
@@ -322,7 +321,7 @@ nav .demi,#all{
     }
     nav .demi{
         display: block;
-        color: aliceblue;
+        color: white;
         position:fixed;
         padding:30px 0; 
         right: 20px;
@@ -371,7 +370,7 @@ nav .demi,#all{
 }
 nav #all{
     display: block;
-    color: aliceblue;
+    color: white;
     padding:30px 0 0 30; 
     font-size: 2em;
 }
@@ -392,7 +391,7 @@ nav .ok{
     display: grid;
     position: fixed;
     z-index: 5;    
-    background-color: aliceblue;
+    background-color: white;
     left: -90%;
 
     top: 0;
@@ -450,7 +449,7 @@ nav .ok{
     left: 0;
     height: fit-content;
     width: 100%;
-    background-color: aliceblue;
+    background-color: white;
     box-shadow:0 0 0 0;
 }
 .Catee .list .i {

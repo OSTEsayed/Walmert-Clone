@@ -1,9 +1,18 @@
+main{
+    display: grid;
+    height: max-content;
+    position: relative;
+    row-gap: 20px;
+    top: 100px;
+
+}
+
+
 .slide{
     display: flex;
     width:100%;
     position: relative;
-    top: 120px;
-    height: 80%;
+    height: 70vh;
     border-radius:15px;
 }
 .first{
@@ -91,3 +100,138 @@
     }
        
   }
+
+.freeship{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0;
+    max-width: 100%;
+    min-height: 40px;
+    height: max-content;
+    background-color: rgb(29, 101, 255);
+    border-radius: 30px;
+    padding: 5px;
+    box-shadow: inset 40px 0 10px 0 yellow;
+}
+.freeship p,.freeship a {
+    color: aliceblue;
+
+}
+.freeship a ,.sell a{
+    padding-top: 15px;
+}
+
+.sell{
+    
+    display: grid;
+    max-width:100%;
+    position: relative;
+    min-height: 60vh;
+    border-radius:15px;
+    grid-template-areas:
+    "selle1 selle3 selle4"
+    "selle2 selle3 selle4"
+    ;
+}
+.sell1{
+    grid-area: selle1;
+    display: flex;
+    justify-content: space-between;
+    height: 20%;
+}
+.sell1 button{
+    margin-top: 15px;
+    right: 5px;
+    border: 1px solid rgb(63, 59, 59);
+    background-color: aliceblue;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+}
+.sell1 button:hover{
+    border: 3px solid rgb(63, 59, 59);
+
+}
+.sell2{
+    grid-area: selle2;
+    height: 60%;
+    display: grid;
+    grid-template-areas:
+"h2 a"
+"item item";
+}
+.sell h2{
+    font-family:"Sofia",Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   font-size: 1.3em;
+}
+.sell3,.sell4,.sell1,.sell2{
+   max-width: 70%;
+    margin: 20px;
+    padding: 5 20px;
+    box-shadow:2px 2px 10px  rgba(0, 0, 0, 0.349);
+    border-radius: 10px;
+}
+.sell3{
+    grid-area: selle3;
+
+}
+.sell4{
+    grid-area: selle4;
+
+}
+.sell2  >a{
+text-align: end;
+}
+.sell2items{
+    grid-area:item;
+    gap:10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.sell2items i{
+    background-color: rgb(198, 212, 255);
+    color: rgb(15, 139, 255);
+    height: 70px;
+    width: 70px;
+    padding:25px 15 0 ; 
+    font-size: 3em;
+    border-radius: 50%;
+}
+.sell2items a{
+display: flex;
+flex-direction: column;
+text-align: center;
+text-decoration: none;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 500px){
+    
+.sell{
+    
+    grid-template-areas:
+    "selle1"
+    "selle2"
+    "selle3"
+    "selle4";
+}
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
