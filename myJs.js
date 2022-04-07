@@ -294,8 +294,20 @@ Slide(Index);
 
 var bob=document.getElementsByClassName("bbob")[0];
 function echrislide(p){
-    bob.scrollLeft+=p;
-    console.log(topPos);
+    if (p==400){var r=1}
+    else {var r=-1}
+    let x=null;
+    clearInterval(x);
+    x=setInterval(anim,1);
+    function anim(){
+
+     if (p==0){clearInterval(x);}
+     else{       
+          p=p-r;  
+            bob.scrollLeft+=r*2;
+        }
+        
+    }
 
 }
 
