@@ -44,7 +44,7 @@ function clickk() {
 }
 function clicke() {
     mod.style.display="none";
-    bodt.style.backgroundColor= "aliceblue";
+    bodt.style.backgroundColor= "white";
 }
 
 function mega(a,b,c,d,e,f){
@@ -72,7 +72,7 @@ function test(a,b,c,d,e,f){
     if(a.style.display=="none" && b.style.display=="none" && c.style.display=="none" && d.style.display=="none" && f.style.display=="none" && e.style.display=="none")
     { list.style.display="none";
     
-    bodt.style.backgroundColor= "aliceblue";}
+    bodt.style.backgroundColor= "white";}
 }
 
 if (screen.width>500){
@@ -86,7 +86,7 @@ function clickk() {
 }
 function clicke() {
     mod.style.display="none";
-    bodt.style.backgroundColor= "aliceblue";
+    bodt.style.backgroundColor= "white";
 }
 panel.onmouseover = function(){mainS.style.display="grid";
 order.style.display="none";
@@ -95,13 +95,13 @@ list2.style.display="none";
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 };
 mainS.onmouseleave = function(){mainS.style.display="none"
-bodt.style.backgroundColor= "aliceblue";};
+bodt.style.backgroundColor= "white";};
 mainS.onmouseover=function(){mainS.style.display="grid"
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
 
 
 mainS.onmouseout = function(){mainS.style.display="none"
-bodt.style.backgroundColor= "aliceblue";};
+bodt.style.backgroundColor= "white";};
 
 
 
@@ -113,13 +113,13 @@ list2.style.display="none";
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 };
 order.onmouseleave = function(){order.style.display="none";
-bodt.style.backgroundColor= "aliceblue";};
+bodt.style.backgroundColor= "white";};
 order.onmouseover=function(){order.style.display="grid"
 bodt.style.backgroundColor= "rgba(0,0,0,0.3)";}  
 
 
 order.onmouseout = function(){order.style.display="none"
-bodt.style.backgroundColor= "aliceblue";};
+bodt.style.backgroundColor= "white";};
 
 
 
@@ -204,7 +204,7 @@ bodt.style.backgroundColor= "rgba(0,0,0,0.3)";
 }
 function clicke() {
     mod.style.display="none";
-    bodt.style.backgroundColor= "aliceblue";
+    bodt.style.backgroundColor= "white";
 }
 
 let ie=document.getElementsByClassName("ie")[0];
@@ -221,7 +221,7 @@ function demi_resp(){
         all.className="all fa-solid fa-bars";
         nav.style.left="0";
         side.style.left="-90%";
-        bodt.style.backgroundColor= "aliceblue";
+        bodt.style.backgroundColor= "white";
         
     }
 
@@ -292,6 +292,12 @@ AutoSlides();
 
 Slide(Index);
 
+var bob=document.getElementsByClassName("bbob")[0];
+function echrislide(p){
+    bob.scrollLeft+=p;
+    console.log(topPos);
+
+}
 
 
 
