@@ -228,14 +228,13 @@ font-family: Arial, Helvetica, sans-serif;
     position: relative;
     min-height: 70vh;
     width: 100%;
-    border-radius: 30px;
+    border-radius: 10px;
     box-shadow:2px 2px 10px  rgba(0, 0, 0, 0.349);
 }
 .yourcart h2{
     text-align: center;
 }
 .bbob{
-    background-color: red;
     overflow: hidden;
     padding-left: 3%;
     margin: auto;
@@ -243,16 +242,16 @@ font-family: Arial, Helvetica, sans-serif;
     gap: 5%;
     height: 90%;
     width: 97%;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .echri{
     position: relative;
     width: 15%;
     min-width: 15%;
     
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 .echri img{
     position: relative;
@@ -317,6 +316,7 @@ font-family: Arial, Helvetica, sans-serif;
 @media (max-width: 500px){
     
 .sell{
+    width: 100vw;
     gap:30px;
     grid-template-areas:
     "selle1"
@@ -332,6 +332,41 @@ font-family: Arial, Helvetica, sans-serif;
 
 .sell4items img{
     max-width: 40vw;
+}
+.yourcart{
+    width:95vw;
+    margin: 2vw;
+    justify-content:start;
+}
+.bbob{
+    margin-top: 0;
+ display:grid;
+ gap:5px;
+ height: 300vh;
+ overflow: scroll;
+ }
+ .echri{
+     margin-left: 2vw;
+     width: 90%;
+     border-bottom: 1px solid black;
+    }
+    .itc{display: none;}
+    .ee{
+    margin-left: 3vw;
+    display: block;
+    left: 0;
+    width: 80vw;
+
+    bottom: -10vh;
+    cursor: pointer;
+    position: absolute;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius:10px;
+    user-select: none;
 }
 }
 
