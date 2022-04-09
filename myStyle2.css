@@ -333,40 +333,45 @@ font-family: Arial, Helvetica, sans-serif;
 .sell4items img{
     max-width: 40vw;
 }
-.yourcart{
-    width:95vw;
-    margin: 2vw;
-    justify-content:start;
-}
-.bbob{
-    margin-top: 0;
- display:grid;
- gap:5px;
- height: 300vh;
- overflow: scroll;
- }
- .echri{
-     margin-left: 2vw;
-     width: 90%;
-     border-bottom: 1px solid black;
-    }
-    .itc{display: none;}
-    .ee{
-    margin-left: 3vw;
-    display: block;
-    left: 0;
-    width: 80vw;
 
-    bottom: -10vh;
-    cursor: pointer;
-    position: absolute;
-    padding: 16px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.6s ease;
-    border-radius:10px;
-    user-select: none;
+.itc{
+    display: none;
+}
+
+    
+.yourcart{
+    height: 40vh;
+    max-height: 40vh;
+    width: 100vw;
+    }
+.bbob{
+    overflow: auto;
+    height: 95%;
+    width: 97%;
+}
+.echri{    width: 30%;
+    min-width: 30%;
+    height: 95%}
+    
+.echri button:hover{
+    background-color: rgb(0, 30, 163);
+
+    font-size: 1.3em;
+    }
+.prix{
+    display: flex;
+    gap: 10px;
+}
+.prix .h4{
+    color: rgb(107, 96, 96);
+
+}
+.echri p{
+    height: 20%;
+    max-height: 20%;
+    
+  overflow: hidden;
+  text-overflow: ellipsis; 
 }
 }
 
