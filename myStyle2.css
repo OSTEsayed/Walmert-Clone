@@ -223,11 +223,12 @@ font-family: Arial, Helvetica, sans-serif;
 
 
 .yourcart{
+margin: 15px;
     display: flex;
     flex-direction: column;
     position: relative;
     min-height: 70vh;
-    width: 100%;
+  width: 98%;
     border-radius: 10px;
     box-shadow:2px 2px 10px  rgba(0, 0, 0, 0.349);
 }
@@ -299,9 +300,52 @@ font-family: Arial, Helvetica, sans-serif;
 }
 
 
-
-
-
+footer{
+    position:relative;
+    bottom: 0;
+    margin: -40px;
+    width: 100vw;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.ous {
+    padding-top: 15px;
+    text-align: center;
+    width: 100%;
+    background-color: rgb(181, 210, 247);
+    height: 44%;
+}
+.ous button{
+    min-width: 200px;
+    min-height: 40px;
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: aliceblue;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.ous button:hover{
+    border:2px solid black;
+}
+.nous{
+    width: 100%;
+    height: 56%;
+    background-color: rgb(47, 83, 241);
+}
+.nnous{
+    text-align: center;
+    width: 80%;
+    margin-left: 15%;
+    margin-top: 25px;
+}
+.nnous a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 1.0em;
+}
 
 
 
@@ -342,7 +386,7 @@ font-family: Arial, Helvetica, sans-serif;
 .yourcart{
     height: 40vh;
     max-height: 40vh;
-    width: 100vw;
+    width: 94vw;
     }
 .bbob{
     overflow: auto;
