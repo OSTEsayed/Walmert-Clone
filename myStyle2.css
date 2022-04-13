@@ -192,9 +192,9 @@ text-align: end;
 .sell2items i{
     background-color: rgb(198, 212, 255);
     color: rgb(15, 139, 255);
-    height: 70px;
-    width: 70px;
-    padding:25px 15 0 ; 
+    height: auto;
+    width: auto;
+    padding: 20px; 
     font-size: 3em;
     border-radius: 50%;
 }
@@ -301,10 +301,10 @@ margin: 15px;
 
 
 .cartf{
-    margin-top: 30px;
     position:relative;
     bottom: 0;
-    margin: -40px;
+    margin: -30px;
+    margin-top: 100px;
     width: 100vw;
     height: 60%;
     display: flex;
@@ -375,7 +375,7 @@ margin: 15px;
 }
     
 .sell2items{
-    margin-left: 0;
+    margin-left: 2vw;
     max-width:80vw;
 }
 
@@ -391,7 +391,7 @@ margin: 15px;
 .yourcart{
     height: 40vh;
     max-height: 40vh;
-    width: 94vw;
+    width: 92vw;
     }
 .bbob{
     overflow: auto;
@@ -426,6 +426,7 @@ margin: 15px;
 
 .cartf{
     margin:0;
+    margin-top:50px;
     width: 100vw;
     height: 60%;
 }
